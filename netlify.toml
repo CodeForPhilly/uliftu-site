@@ -1,0 +1,4 @@
+[build]
+  base    = "jekyll-mockup"
+  command = "jekyll build"
+  publish = "jekyll-mockup/_site"
