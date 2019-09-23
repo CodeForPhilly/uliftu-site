@@ -26,8 +26,20 @@ Next Event: Fitness Class @ Martin Luther King Jr. Recreation Center
 
 ## Supporters
 
-Generous program support provided by; International Marketing Systems, Avalanche Granola, the Independence Blue Cross Foundation and CrossFit Foundation.
+Generous program support provided by the following organziations:
 
-<div class="placeholder" style="height:10rem">grid of logos</div>
+<div class="supporters">
+  <div>International Marketing Systems</div>
+  <div>Avalanche Granola</div>
+  <div>Independence Blue Cross Foundation</div>
+  <div>CrossFit Foundation</div>
+</div>
+
+## Community Partners
+
+<div class="supporters">
+  <div>Partner 1</div>
+  <div>Organization A</div>
+</div>
 
 [Become a supporter of UliftU](/support-us)
