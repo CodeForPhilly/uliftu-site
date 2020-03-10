@@ -67,7 +67,7 @@ const Home = () => {
                     Inspiring quote about uliftu from participant.{' '}
                   </p>
                   <footer className="blockquote-footer">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
+                    Arthur <cite title="Source Title">Source Title</cite>
                   </footer>
                 </blockquote>
               </Card.Body>
@@ -84,7 +84,7 @@ const Home = () => {
                     Inspiring quote about uliftu from participant.{' '}
                   </p>
                   <footer className="blockquote-footer">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
+                    Rodney <cite title="Source Title">Program Participant</cite>
                   </footer>
                 </blockquote>
               </Card.Body>
