@@ -1,4 +1,5 @@
 .App {
+
 }
 
 /* .navbarLinks {
@@ -62,6 +63,30 @@
   display:block;
   margin-left:auto;
   margin-right:auto;
+}
+
+.cardHeader {
+  background-color: #D2DC2E;
+  height: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .cardContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.liftCard {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+}
+
+.uliftCardButton {
+  border-color: white;
+  background-color: black;
+  font-family: Roboto;
 }
 
 @keyframes App-logo-spin {

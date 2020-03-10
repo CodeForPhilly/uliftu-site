@@ -37,10 +37,10 @@ const App = (props) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link><Link className='navbarLinks' to='/'>About us</Link></Nav.Link>
-              <Nav.Link><Link className='navbarLinks' to='/program'>Training Program</Link></Nav.Link>
-              <Nav.Link><Link className='navbarLinks' to='/join'>Classes and Events</Link></Nav.Link>
-              <Nav.Link><Link className='navbarLinks' to='/join'>Support UliftU</Link></Nav.Link>
+              <Nav.Link><Link to='/'>About us</Link></Nav.Link>
+              <Nav.Link><Link to='/program'>Training Program</Link></Nav.Link>
+              <Nav.Link><Link to='/join'>Classes and Events</Link></Nav.Link>
+              <Nav.Link><Link to='/join'>Support UliftU</Link></Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1"><Link to='/staff'>Staff</Link></NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2"><Link to='/mission'>Mission</Link></NavDropdown.Item>
