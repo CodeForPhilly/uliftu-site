@@ -1,10 +1,19 @@
 .App {
 }
 
+/* .navbarLinks {
+  color: #FFF;
+}
+
+.navbarLinks:hover {
+  color: #D2DC2E
+} */
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,7 +22,7 @@
 }
 
 .home {
-  
+
 }
 
 .App-header {
@@ -31,6 +40,30 @@
   color: #61dafb;
 }
 
+.uliftuNavbar {
+  background-color: black;
+}
+
+.uliftuNavbar a{
+  color: #FFF;
+}
+
+.uliftuNavbar a:hover {
+  color: #D2DC2E;
+  text-decoration: none;
+}
+
+.homeJumbotron {
+  display: flex;
+  justify-content: space-around;
+}
+
+.homeJumbotron img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,3 +72,4 @@
     transform: rotate(360deg);
   }
 }
+

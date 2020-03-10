@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Image, Form, FormControl, Button } from 'react-bootstrap'
 import logo from './assets/logo-black.svg'
 import headerImage from './assets/action-athlete-barbell-841130.png'
 import drupalService  from './services/drupal'
+import barbell from './assets/action-athlete-barbell-841130.png'
 
 import { HashRouter as Router,
   Link,
@@ -31,15 +32,15 @@ const App = (props) => {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
-        <Navbar bg="dark" expand="lg">
+        <Navbar className='uliftuNavbar' text='light' expand="lg">
           <Navbar.Brand ><Link to='/'><img height='30' width='70' src={logo}/></Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link><Link to='/'>About us</Link></Nav.Link>
-              <Nav.Link><Link to='/program'>Training Program</Link></Nav.Link>
-              <Nav.Link><Link to='/join'>Classes and Events</Link></Nav.Link>
-              <Nav.Link><Link to='/join'>Support UliftU</Link></Nav.Link>
+              <Nav.Link><Link className='navbarLinks' to='/'>About us</Link></Nav.Link>
+              <Nav.Link><Link className='navbarLinks' to='/program'>Training Program</Link></Nav.Link>
+              <Nav.Link><Link className='navbarLinks' to='/join'>Classes and Events</Link></Nav.Link>
+              <Nav.Link><Link className='navbarLinks' to='/join'>Support UliftU</Link></Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1"><Link to='/staff'>Staff</Link></NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2"><Link to='/mission'>Mission</Link></NavDropdown.Item>

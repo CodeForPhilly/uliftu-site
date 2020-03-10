@@ -1,22 +1,55 @@
 import React from 'react'
-import { Container, Jumbotron, Button, ListGroup, ListGroupItem } from 'react-bootstrap'
+import { Container, Card, Jumbotron, Image, Button, ListGroup, ListGroupItem, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import headerImage from '../assets/action-athlete-barbell-841130.png'
+import logo from '../assets/logo-black.svg'
+import barbell from '../assets/action-athlete-barbell-841130.png'
 
 const Home = () => {
   return (
     <>
-      <Container>
-        <Jumbotron className='mt-5'>
-
-          <h1>UliftU</h1>
+    <Container fluid style={{ textAlign: 'center', backgroundColor: 'black', }} >
+    <Image fluid src={logo} />
+      <Row>
+        <Col className='sm-6 mb-2' style={{ fontFamily: 'Alfa Slab One', color: 'white' }}>
+          UliftU prepares re-entering citizens for meaningful careers in the fitness industry
+        </Col>
+      </Row>
+    </Container>
+        <Row className="justify-content-md-center">
+          <Col xs={12} sm={6} md={4}>
+            <div style={{ backgroundColor: 'black', backgroundColor: 'green', height: '5px' }}></div>
+            <Card style={{ fontFamily: 'Alfa Slab One', color: 'white' }}>
+              <Card.Body >
+                <Card.Title>Our Mission</Card.Title>
+                <Card.Text>
+                  Generate employment opportunities and promote wellness in under-served communities.
+                </Card.Text>
+                <Button>More On Our Mission</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} sm={6} md={4}>
+            <Card style={{ backgroundColor: 'black', color: 'white' }}>
+              <Card.Body>
+                <Card.Title style={{ fontFamily: 'Alfa Slab One'}}>View Program</Card.Title>
+                <Card.Text style={{ fontFamily: 'Roboto' }}>
+                  Preparing participants for for holistic wellness. UliftU empowers re-entering citizens to become strong leaders in their own lives and communities.
+                </Card.Text>
+                <Button>More On Our Mission</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      <Container className='cardContainer'>
+        <Row>
           <p>
             UliftU prepares re-entering citizens for meaningful careers in the fitness industry
           </p>
+        </Row>
           <p>
             <Button variant="primary col-8">Learn how</Button>
           </p>
-        </Jumbotron>
         <h1>Our Mission</h1>
         <p>
           Generate employment opportunties and promote wellness in underserved communities.
