@@ -89,7 +89,7 @@ const Home = () => {
                     Inspiring quote about uliftu from participant.{' '}
                   </p>
                   <footer className="blockquote-footer">
-                    Rodney /<cite title="Source Title"> Program Participant</cite>
+                    Rodney
                   </footer>
                 </blockquote>
               </Card.Body>
@@ -99,15 +99,9 @@ const Home = () => {
             <Card className='liftCard'>
               <Image style={{ width: '100%' }} src={success3}/>
               <Card.Body>
-                <blockquote className="blockquote mb-0">
-                  <p>
-                    {' '}
-                    Inspiring quote about uliftu from participant.{' '}
-                  </p>
-                  <footer className="blockquote-footer">
-                    Tim /<cite title="Source Title">Program Director</cite>
-                  </footer>
-                </blockquote>
+                <Card.Text>Inspiring quote about uliftu from participant.</Card.Text>
+                <Card.Subtitle>Tim</Card.Subtitle>
+                <p>Program Director</p>
               </Card.Body>
             </Card>
           </Col>
