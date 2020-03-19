@@ -1,25 +1,39 @@
 import React from 'react'
-import {Col, Button, Card, Image } from 'react-bootstrap'
+import { Col, Card, Button, Image } from 'react-bootstrap'
+// import styles from '../App.css'
 
-const BasicCard = ({
-  cardText,
-  cardTitle,
-  buttonText,
-  image
-}) => {
+const styles = {
+  cardStyle: {
+    backgroundColor: 'black',
+    color: 'white',
+    borderRadius: 0
+  },
+  img: {
+    objectFit: 'cover',
+    width: '100%'
+  },
+  text: {
+    minHeight: '6rem',
+    fontFamily: 'Roboto'
+  },
+  header: {
+    fontFamily: 'Alfa Slab One'
+  }
+}
+
+const BasicCard = ({ image, header, text, buttonText }) => {
   return (
-  <Col xs={12} sm={6} md={6}>
-    <div className='cardHeader'></div>
-    <Card className='liftCard'>
+  <Col fluid sm >
+    <div className='cardDivider'></div>
+    <Card style={styles.cardStyle}>
       <Card.Body>
-        <Card.Title style={{ fontFamily: 'Alfa Slab One'}}>Job Training Program</Card.Title>
-        <Card.Text style={{ fontFamily: 'Roboto' }}>
-          Preparing participants for for holistic wellness. UliftU empowers re-entering citizens to become strong leaders in their own lives and communities.
+        <Card.Title style={styles.header}>{header}</Card.Title>
+        <Card.Text style={styles.text}>
+          {text}
         </Card.Text>
-        <Button block className='uliftCardButton' style={{ borderColor: 'white', backgroundColor: 'black', fontFamily: 'Roboto' }}>{buttonText}</Button>
-      </Card.Body>
+        <Button block className='uliftCardButton'>{buttonText}</Button>              </Card.Body>
+      <Card.Img style={styles.img} src={image} />
     </Card>
-    <Image style={{ width: '100%' }} src={image} />
   </Col>
   )
 }

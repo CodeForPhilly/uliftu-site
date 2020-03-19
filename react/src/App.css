@@ -54,6 +54,19 @@
   text-decoration: none;
 }
 
+.logoHeader {
+  textAlign: center;
+  backgroundColor: black;
+  paddingLeft: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .logoHeader {
+    marginBottom: 0
+  }
+}
+
+
 .homeJumbotron {
   display: flex;
   justify-content: space-around;
@@ -65,12 +78,19 @@
   margin-right:auto;
 }
 
-.cardHeader {
+.cardDivider {
   background-color: #D2DC2E;
   height: 5px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
+  .cardContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .cardContainer {
     padding-left: 0px;
     padding-right: 0px;
@@ -89,11 +109,14 @@
   }
 }
 
-
-.liftCard {
+.basicCard {
   background-color: black;
   color: white;
   border-radius: 0;
+}
+
+.basicCard {
+  font-family: Alfa Slab One;
 }
 
 .uliftCardButton {

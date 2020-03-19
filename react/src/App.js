@@ -18,6 +18,7 @@ import Staff from './components/Staff'
 import Stories from './components/Stories'
 import About from './components/About'
 import Contact from './components/Contact'
+import Test from './components/Test'
 
 import './App.css';
 
@@ -38,6 +39,7 @@ const App = (props) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link><Link to='/'>About us</Link></Nav.Link>
+              <Nav.Link><Link to='/test'>TEST</Link></Nav.Link>
               <Nav.Link><Link to='/program'>Training Program</Link></Nav.Link>
               <Nav.Link><Link to='/join'>Classes and Events</Link></Nav.Link>
               <Nav.Link><Link to='/join'>Support UliftU</Link></Nav.Link>
@@ -61,6 +63,7 @@ const App = (props) => {
           <Route path='/staff' component={Staff}/>
           <Route path='/mission' component={Mission} />
           <Route path='/program' component={Program}/>
+          <Route path='/test' component={Test} />
         </Switch>
       </div>
     </Router>
